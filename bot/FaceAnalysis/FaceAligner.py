@@ -1,8 +1,5 @@
-#from FaceAnalysis import FaceAnalysis
 import cv2
 import numpy as np
-#Custom face aligner from the pyimagesearch,
-#para apreovechar el landmark ya sacado, y ahorar procesamiento innecesario,
 #La función alignFace toma la imagen original, el rect (con el detector de dlib),
 #Y los landmarks
 #https://www.pyimagesearch.com/2017/05/22/face-alignment-with-opencv-and-python/

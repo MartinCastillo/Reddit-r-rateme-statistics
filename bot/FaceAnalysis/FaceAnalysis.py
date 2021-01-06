@@ -1,8 +1,6 @@
 #Function dedicated to detect the position of the face in the image if there
 #is one, the landmarks and get important distances betwen certain points
 #to calculate the golden ratio proportions
-#later: https://www.learnopencv.com/average-face-opencv-c-python-tutorial/
-#https://www.learnopencv.com/face-morph-using-opencv-cpp-python/
 import numpy as np
 import cv2
 import dlib
@@ -22,7 +20,7 @@ class FaceAnalysis:
 
     def face_landmarks_enlisted(self,img):
         """Get landmarks with dlib, return list of faces and a list of faces and rectangle of the face"""
-        #https:https://github.com/1adrianb/face-alignment, this is better
+        #https:https://github.com/1adrianb/face-alignment
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
         #Detect faces
         rects = self.detector(gray,1)

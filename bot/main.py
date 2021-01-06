@@ -15,14 +15,6 @@ client_secret=''
 username=''
 password=''
 
-#https://www.reddit.com/prefs/apps
-#app's client secret is: PNj8wSpR63s5VeJD4ZyDKnvJM5Y
-#Id: Ra4-_6k5kferPQ
-#Perfil: martinn_castillo
-#Data tags: id,landmark,image,gender,age,score
-#Note: You can access to the submission's instance with the submission's id
-#with the url like: https://www.reddit.com/r/subreddit/comments/id
-
 def imprimir_conteo_posts_guardados(conteo1,conteo2,conteo_g):
     mensaje = "[Saved faces]: {} / [Added faces]: {} / [Unknown tagged]: {}"
     formato = mensaje.format(conteo1,conteo2,conteo_g)
@@ -53,7 +45,6 @@ def post_scraping(bot,data_storage_src,subreddit_dir,limit_posts=None,limite_com
                 landmarks_list,rect_list = face_anlysis.face_landmarks_enlisted(image)
                 if(landmarks_list):
                     for ix,landmark in enumerate(landmarks_list):
-                        """Cuidado, puede que is_face_aligned_estimation este muy rota, para cosas raras como imagenes con muchas caras"""
                         #revisa si la cara está lo suficientemente derecha
                         if(face_anlysis.is_face_aligned_estimation(image,landmark,threshold=40)):
                             #Obtine cara alineada,la enmascara cara, sacando el fondo, y la pasa a escala de grises
@@ -103,7 +94,7 @@ if(__name__=='__main__'):
     try:
         bot = Bot(user_agent=user_agent, client_id=client_id,
                 client_secret=client_secret,username=username,
-                password=password,coment_score_template='Score< {}')
+                password=password,coment_score_template='Score {}')
         post_predicting(bot,"rateme",face_image_width = 224)
     except KeyboardInterrupt:
         print("\nCerrando...")
