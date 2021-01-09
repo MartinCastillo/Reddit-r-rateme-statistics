@@ -8,7 +8,8 @@ Media de puntajes.
 ![img](https://github.com/MartinCastillo/Reddit-r-rateme-statistics/blob/master/captures/scores.png)
 
 <br>
-Obtención de rostros catalogados de forma automática.
+Obtención de rostros catalogados y con formato de forma automática.
+<br>
 
 ![img](https://github.com/MartinCastillo/Reddit-r-rateme-statistics/blob/master/captures/capture_2.png)
 
