@@ -16,3 +16,10 @@ Obtención de rostros catalogados y con formato de forma automática.
 ![img](https://github.com/MartinCastillo/Reddit-r-rateme-statistics/blob/master/captures/capture_3.png)
 
 <h1>Archivos</h1>
+
+* ```face_score_model``` Contiene los modelos y el analisis de los datos obtenidos.<br>
+* ```bot``` Contiene el bot hecho para recolectar los datos (imágenes, landmarks y clasificaciones según género y puntaje).<br>
+  * -> ```Bot```<br>
+    * -> ```Bot.py``` La clase del bot<br>
+  * -> ```main.py``` Archivo principal para recolectar la información<br>
+  * -> ```FaceAnalysis``` Contiene archivos que contienen funciones para analizar los rostros (Y alinearlos)<br>
