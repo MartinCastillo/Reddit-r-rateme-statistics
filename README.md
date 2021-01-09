@@ -4,11 +4,14 @@ Se explora la posibilidad de predecir el puntaje de un rostro clasificado en el 
 
 <br>
 Media de puntajes.
+
 ![img](https://github.com/MartinCastillo/Reddit-r-rateme-statistics/blob/master/captures/scores.png)
 
 <br>
 Obtención de rostros catalogados de forma automática.
+
 ![img](https://github.com/MartinCastillo/Reddit-r-rateme-statistics/blob/master/captures/capture_2.png)
+
 ![img](https://github.com/MartinCastillo/Reddit-r-rateme-statistics/blob/master/captures/capture_3.png)
 
 <h1>Archivos</h1>
